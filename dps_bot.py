@@ -1,4 +1,5 @@
 from dps import PirateFactory
+import config
 from discord.ext import commands
 import discord
 import logging
@@ -45,12 +46,12 @@ class DiscordUtils:
 #
 bot = commands.Bot(command_prefix="!")
 
-logging.basicConfig(filename='wizz_bot.log',
+logging.basicConfig(filename='dps_bot.log',
                     filemode='a',
                     format='[%(asctime)s] %(name)s - %(message)s',
                     datefmt='%d-%m-%Y @ %H:%M:%S',
                     level=logging.INFO)
-logger = logging.getLogger('wizz_bot')
+logger = logging.getLogger('dps_bot')
 
 
 
@@ -69,4 +70,4 @@ async def walkcycle(ctx, token_id):
 #
 # Run bot
 #
-bot.run(config.dicord_access_token)
+bot.run(config.discord_access_token)

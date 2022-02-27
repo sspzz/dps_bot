@@ -79,4 +79,4 @@ def all_png(path):
 
 def walkcycle(pirate):
     sprites = tile(Image.open(pirate.spritesheet), 4, 4)
-    gif(sprites, pirate.walkcycle, duration=150, dim=(400,400), transparent=True)
+    gif(sprites, pirate.walkcycle, duration=150, dim=(200,200), transparent=True)
